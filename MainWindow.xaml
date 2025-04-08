@@ -26,33 +26,21 @@
 						<!-- Іконка для кнопки Paste -->
 						<Image Source="component/Images/paste.png" Width="16" Height="16"/>
 						<!-- Текст для кнопки Paste -->
-						<TextBlock Margin="3,0,0,0">Paste</TextBlock>
+						<TextBlock Margin="3,0,0,0" >Paste</TextBlock>
 					</StackPanel>
 				</Button>
-			</ToolBar>
-		</ToolBarTray>
-
-		<!-- Панель інструментів, розташована праворуч вікна (по вертикалі) -->
-		<ToolBarTray DockPanel.Dock="Right" Orientation="Vertical">
-			<ToolBar>
-				<!-- Кнопка "Cut" з іконкою та підказкою -->
-				<Button Command="Cut" ToolTip="Cut selection to Windows Clipboard.">
-					<Image Source="component/Images/scissors.png" Width="16" Height="16"/>
-				</Button>
-
-				<!-- Кнопка "Copy" з іконкою та підказкою -->
-				<Button Command="Copy" ToolTip="Copy selection to Windows Clipboard.">
-					<Image Source="component/images/copy.png" Width="16" Height="16" />
-				</Button>
-
-				<!-- Кнопка "Paste" з іконкою та підказкою -->
-				<Button Command="Paste" ToolTip="Paste from Windows Clipboard.">
-					<Image Source="component/images/paste.png" Width="16" Height="16" />
-				</Button>
+				<Separator />
+				<Label>Font size:</Label>
+				<ComboBox>
+					<ComboBoxItem>10</ComboBoxItem>
+					<ComboBoxItem>12</ComboBoxItem>
+					<ComboBoxItem>13</ComboBoxItem>
+					<ComboBoxItem>14</ComboBoxItem>
+				</ComboBox>
 			</ToolBar>
 		</ToolBarTray>
 
 		<!-- Текстове поле для введення тексту -->
-		<TextBox AcceptsReturn="True" />
+		<TextBox AcceptsReturn="True" FontFamily="Courier New" FontSize="15"/>
 	</DockPanel>
 </Window>
